@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t yovadiazdev/node .
+  - docker images yovadiazdev/node
